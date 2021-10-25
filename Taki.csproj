@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{02E3918F-112E-4A80-9319-55DBCB87550B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Taki</RootNamespace>
+    <AssemblyName>Taki</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Brain.cs" />
+    <Compile Include="Card Shower.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Cards and Stuff.cs" />
+    <Compile Include="Cards Pictures.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cards Pictures.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Color Picker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Color Picker.Designer.cs">
+      <DependentUpon>Color Picker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EnemyFormOfCardShowers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EnemyFormOfCardShowers.Designer.cs">
+      <DependentUpon>EnemyFormOfCardShowers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main Form.Designer.cs">
+      <DependentUpon>Main Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Player.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Taki %28logic%29.cs" />
+    <Compile Include="TakiImages.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TakiImages.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Cards Pictures.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Cards Pictures.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Color Picker.resx">
+      <DependentUpon>Color Picker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnemyFormOfCardShowers.resx">
+      <DependentUpon>EnemyFormOfCardShowers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main Form.resx">
+      <DependentUpon>Main Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="TakiImages.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>TakiImages.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ace_DELETE_THIS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back_DELETE_THIS.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Doc_11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Doc_12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Doc_13.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Doc_14.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Doc_15.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Doc_16.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Doc_17.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Doc_18.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Doc_19.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Doc_20.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Doc_21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Doc_22.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Doc_23.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Doc_24.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Doc_25.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Doc_26.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Doc_27.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Doc_28.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Doc_29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Doc_30.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Doc_31.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Doc_32.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Doc_33.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Doc_34.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Doc_35.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Doc_36.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Doc_37.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Doc_38.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Doc_39.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Doc_40.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Doc_41.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Doc_42.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Doc_43.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Doc_44.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Doc_45.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Doc_46.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Doc_47.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Doc_48.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Doc_49.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Doc_50.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Doc_51.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Doc_52.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Doc_53.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Doc_54.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Doc_55.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Doc_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Doc_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Doc_3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Doc_4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Doc_5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Doc_6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Doc_7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Doc_8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Doc_9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Doc_10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonPress.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hqdefault.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\greenBackground.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TAKIheader.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\playButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\taki back.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
